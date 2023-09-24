@@ -151,6 +151,8 @@
     }
     .contain .wid-div{
         width: auto;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .container .serv-h{
         padding-left: 24px;
@@ -160,9 +162,14 @@
         padding-left: 24px;
         padding-right: 24px;
     }
-
-    .bg-neutral-100 .simple {
+    .mians .simple {
         display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .simple div img {
+        height: 450px;
+        margin: auto;
     }
     .simple .wid {
         padding-left: 24px;
@@ -197,15 +204,30 @@
         padding-right: 24px;
     }
     .about-div .haee {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+    }
+    .haee span {
+        font-weight: 900;
     }
     .container .f-p {
         font-size: 1.25rem;
         font-weight: 300;
     }
     .wid-div .f-p {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 300;
+    }
+    .wid-div h2 {
+        font-size: 2.5rem;
+    }
+    .wid-div button {
+        font-size: 1rem;
+    }   
+    .about-div .widas{
+        width: auto;
+    }
+    .widas p {
+        font-size: 1.3rem;
     }
 
 }
