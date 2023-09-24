@@ -45,21 +45,48 @@
 }
 .drop-down:hover ul {
     display: block;
-    background-color: #262626ff;
+}
+.menu ul li a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    transition: .4s ease-in-out;
+}
+.drop-down ul li a{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    transition: .4s ease-in-out;
+}
+/* .menu li:not(.static):hover   {
+    background-color: #737373;
+} 
+.menu .static li:hover a{
+    background-color: #737373;
+} */
+.menu .drop-down:hover .anchor{
+    background-color: #737373;
 }
 
-
+.static .down-one:hover a{
+    background-color: #737373;
+}
 .menu {
     display: none;
     position: absolute;
     width: 20%;
     height: calc(140vh - 50px);
-    top: 0px;
+    top: 88px;
     right: -100%;
     transition: .4s ease-in-out;
     background-color: #262626;
     z-index: 999;
-    
+}
+.menu ul .drop-down .fa-chevron-down { 
+    transition: .4s ease-in-out;
+}
+.menu ul .drop-down:hover .fa-chevron-down {
+    transform: rotateX(180deg);
 }
 .menu.active {
     right: 0;
@@ -71,6 +98,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+.menu-close {
+    display: none;
+}
+.menu.active .menu-close {
+    display: block;
+}
+.menu.active .menu-toggle {
+    display: none;
 }
 @media (max-width: 860px) {
     .container .help-div {
@@ -94,6 +130,9 @@
         font-weight: 600;
         font-size: 150px;
     } 
+    .contain .wid-div{
+        width: auto;
+    }
 }
 @media (max-width: 500px) {
     .main-sec-div .svgs-div {
@@ -102,7 +141,6 @@
     .main-sec .main-sec-div h1 span {
         font-size: 75px;
         font-weight: 700;
-
     }
     .main-sec .main-sec-div h1{
         font-size: 30px;
@@ -152,10 +190,22 @@
         padding-bottom: 24px;
     }
     .menu {
-        width: 35%;
+        width: 50%;
     }
     nav{
         padding-left: 24px;
         padding-right: 24px;
     }
+    .about-div .haee {
+        font-size: 3.5rem;
+    }
+    .container .f-p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+    .wid-div .f-p {
+        font-size: 1.25rem;
+        font-weight: 300;
+    }
+
 }
